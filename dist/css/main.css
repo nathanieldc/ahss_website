@@ -116,10 +116,6 @@ span.red {
               border: none; }
             #navbar div#left ul > li.left-lis:hover ul li:hover, #navbar div#left ul > li > a:hover ul li:hover {
               background: #C018EA; }
-          #navbar div#left ul > li.left-lis:hover ul a, #navbar div#left ul > li.left-lis:hover ul .left-lis, #navbar div#left ul > li > a:hover ul a, #navbar div#left ul > li > a:hover ul .left-lis {
-            color: #fff;
-            padding: 1.25rem 1.0rem;
-            margin: 0rem 0rem; }
       #navbar div#left ul a, #navbar div#left ul .left-lis {
         color: #fff;
         padding: 1.25rem 1.0rem;
@@ -127,9 +123,6 @@ span.red {
         #navbar div#left ul a:hover, #navbar div#left ul .left-lis:hover {
           background-color: #C018EA;
           color: #fff !important; }
-      #navbar div#left ul .left-lis:hover {
-        background-color: #C018EA;
-        color: #fff !important; }
 
 #container-home {
   background: url("../img/main-img.jpeg") no-repeat center center/cover;
@@ -333,7 +326,7 @@ span.red {
     background: #7e7e7e; }
     #container-sd-a #container-sd-b #grid-container {
       display: grid;
-      grid-template-areas: 'headerr headerr headerr' 'pic-1 sapnea1 sapnea1' 'sapnea2 sapnea2 sapnea2' 'sapnea3 sapnea3 pic-2' 'sapnea4 sapnea4 pic-2';
+      grid-template-areas: 'headerr headerr headerr' 'sapnea1 sapnea1 sapnea1' 'sapnea2 sapnea2 sapnea2' 'sapnea3 sapnea3 sapnea3';
       grid-gap: 1rem;
       padding: 2rem 2rem;
       background: #b996da; }
@@ -341,22 +334,22 @@ span.red {
         font-size: 3rem; }
       #container-sd-a #container-sd-b #grid-container p {
         font-size: 1.5rem; }
-      #container-sd-a #container-sd-b #grid-container img {
-        border: 0.5rem solid #656565; }
+      #container-sd-a #container-sd-b #grid-container img#pic-1 {
+        border: 0.5rem solid #656565;
+        float: left;
+        margin: 0rem 1rem 0rem 0rem; }
+      #container-sd-a #container-sd-b #grid-container img#pic-2 {
+        border: 0.5rem solid #656565;
+        float: right;
+        margin: 0rem 1rem 0rem 0rem; }
     #container-sd-a #container-sd-b #headerr {
       grid-area: headerr; }
-    #container-sd-a #container-sd-b #pic-1 {
-      grid-area: pic-1; }
     #container-sd-a #container-sd-b #sapnea1 {
       grid-area: sapnea1; }
     #container-sd-a #container-sd-b #sapnea2 {
       grid-area: sapnea2; }
     #container-sd-a #container-sd-b #sapnea3 {
       grid-area: sapnea3; }
-    #container-sd-a #container-sd-b #sapnea4 {
-      grid-area: sapnea4; }
-    #container-sd-a #container-sd-b #pic-2 {
-      grid-area: pic-2; }
     #container-sd-a #container-sd-b .grid-container #pic-1 {
       display: inline; }
     #container-sd-a #container-sd-b .grid-container #sapnea {
@@ -487,14 +480,12 @@ span.red {
         font-size: 2rem; }
       .container-inlab #sub-container-inlab div#heading h2 {
         font-size: 3.5rem; }
-    .container-inlab #sub-container-inlab div#part1 {
-      display: flex; }
-      .container-inlab #sub-container-inlab div#part1 p {
-        font-size: 1.75rem; }
-      .container-inlab #sub-container-inlab div#part1 #part1a {
-        display: flex;
-        flex-direction: column;
-        padding: 0rem 1.5rem; }
+    .container-inlab #sub-container-inlab div#part1 img {
+      float: left;
+      border: .5rem solid #ccc;
+      margin: 0rem 1rem 0rem 0rem; }
+    .container-inlab #sub-container-inlab div#part1 p {
+      font-size: 1.75rem; }
     .container-inlab #sub-container-inlab div#part2 {
       display: flex;
       flex-direction: column; }
@@ -516,16 +507,16 @@ span.red {
           color: #bc8de8; }
     .container-inlab #sub-container-inlab div#part3 {
       display: grid;
-      grid-template-areas: 'header header header' 'picture p-a p-a' 'p-b p-b p-b';
+      grid-template-areas: 'header header header' 'p-a p-a p-a';
       grid-gap: 1.5rem; }
       .container-inlab #sub-container-inlab div#part3 h3 {
         grid-area: header; }
-      .container-inlab #sub-container-inlab div#part3 img {
-        grid-area: picture; }
-      .container-inlab #sub-container-inlab div#part3 p#a {
+      .container-inlab #sub-container-inlab div#part3 #p-a {
         grid-area: p-a; }
-      .container-inlab #sub-container-inlab div#part3 p#b {
-        grid-area: p-b; }
+        .container-inlab #sub-container-inlab div#part3 #p-a img {
+          float: left;
+          border: .5rem solid #ccc;
+          margin: 0em 1rem 0rem 0rem; }
       .container-inlab #sub-container-inlab div#part3 p {
         font-size: 1.5rem; }
     .container-inlab #sub-container-inlab div#part4 {
@@ -723,3 +714,115 @@ span.red {
           font-size: 1rem; }
         #main-container-np #sub-container-np form #part4 textarea {
           font-size: 1.5rem; }
+
+@media (max-width: 800px) {
+  #navbar {
+    flex-direction: column; }
+    #navbar h1 {
+      font-size: 2.5rem; }
+    #navbar div#left ul {
+      font-size: .5rem; }
+      #navbar div#left ul a, #navbar div#left ul .left-lis {
+        color: #fff;
+        padding: 1.0rem .75rem;
+        margin: 0rem 0rem; }
+        #navbar div#left ul a:hover, #navbar div#left ul .left-lis:hover {
+          background-color: #C018EA;
+          color: #fff !important; }
+  #container-home {
+    margin-top: -7rem; }
+  #feeling-container #feeling .container {
+    flex-direction: column; }
+    #feeling-container #feeling .container .inner-border {
+      position: relative;
+      top: 0rem;
+      height: .3rem;
+      width: 25.5rem;
+      margin: 2rem 0rem; }
+  #feeling-container #feeling #part-1 {
+    padding: 0rem 3.2rem;
+    color: #fff; }
+    #feeling-container #feeling #part-1 #head {
+      font-size: 4rem;
+      text-align: center;
+      margin: 1rem;
+      font-weight: bolder; }
+    #feeling-container #feeling #part-1 #head-2 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1rem; }
+    #feeling-container #feeling #part-1 #pot-problems1 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 1rem; }
+    #feeling-container #feeling #part-1 #pot-problems2 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 1rem; }
+    #feeling-container #feeling #part-1 #pot-problems3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 1rem; }
+  #main-container-hst {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #7e7e7e; }
+    #main-container-hst #sub-container-hst {
+      width: 80rem;
+      padding: 3rem;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column; }
+    #main-container-hst p {
+      font-size: 1.5rem; }
+    #main-container-hst div#part1 {
+      padding-bottom: 2.5rem; }
+      #main-container-hst div#part1 h3 {
+        font-size: 2rem;
+        padding-bottom: 1.5rem; }
+      #main-container-hst div#part1 h2 {
+        font-size: 3rem; }
+    #main-container-hst div#part2 {
+      padding-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      #main-container-hst div#part2 img {
+        height: 20rem;
+        border: 0.3rem solid #C018EA;
+        margin: 1rem; }
+      #main-container-hst div#part2 iframe {
+        height: 20rem;
+        border: 0.3rem solid #C018EA;
+        margin: 1rem; }
+    #main-container-hst div#part3 {
+      padding-bottom: 2.5rem; }
+      #main-container-hst div#part3 #bold {
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #303030; }
+      #main-container-hst div#part3 #red {
+        font-family: sans-serif;
+        font-weight: 600;
+        color: red; }
+    #main-container-hst div#part4 {
+      padding-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      #main-container-hst div#part4 img {
+        height: 25rem;
+        border-radius: 5%; }
+    #main-container-hst div#part5 h2 {
+      font-size: 3rem;
+      text-align: center;
+      padding-bottom: 1.5rem; }
+    #main-container-hst div#part5 p {
+      font-size: 2rem; }
+      #main-container-hst div#part5 p span {
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #303030; } }

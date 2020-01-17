@@ -172,11 +172,11 @@ span.red {
             }
           }
 
-          a, .left-lis {
-            color: #fff;
-            padding: 1.25rem 1.0rem;
-            margin: 0rem 0rem;
-          }
+          // a, .left-lis {
+          //   color: #fff;
+          //   padding: 1.25rem 1.0rem;
+          //   margin: 0rem 0rem;
+          // }
 
         }
 
@@ -200,13 +200,13 @@ span.red {
         }
       }
 
-      .left-lis { 
-        &:hover {
-          background-color: $purple_color;
-          color: #fff !important;
-          // border-radius: 7.5% 7.5% 0% 0%;
-        }
-      }
+      // .left-lis { 
+      //   &:hover {
+      //     background-color: $purple_color;
+      //     color: #fff !important;
+      //     // border-radius: 7.5% 7.5% 0% 0%;
+      //   }
+      // }
 
 
     }
@@ -518,10 +518,9 @@ span.red {
       display: grid;
       grid-template-areas: 
       'headerr headerr headerr'
-      'pic-1 sapnea1 sapnea1'
+      'sapnea1 sapnea1 sapnea1'
       'sapnea2 sapnea2 sapnea2'
-      'sapnea3 sapnea3 pic-2'
-      'sapnea4 sapnea4 pic-2';
+      'sapnea3 sapnea3 sapnea3';
       grid-gap: 1rem;
       padding: 2rem 2rem;
       #headerr {
@@ -532,18 +531,22 @@ span.red {
         font-size: 1.5rem;
       }
       background: rgb(185, 150, 218);
-      img {
+      img#pic-1 {
         border: .5rem solid rgb(101, 101, 101);
+        float: left;
+        margin: 0rem 1rem 0rem 0rem;
+      }
+      img#pic-2 {
+        border: .5rem solid rgb(101, 101, 101);
+        float: right;
+        margin: 0rem 1rem 0rem 0rem;
       }
     }
   
     #headerr {
       grid-area: headerr;
     }
-    #pic-1 {
-      grid-area: pic-1;
-    }
-    #sapnea1 {
+    #sapnea1{
       grid-area: sapnea1;
     }
     #sapnea2 {
@@ -551,12 +554,6 @@ span.red {
     }
     #sapnea3 {
       grid-area: sapnea3;
-    }
-    #sapnea4 {
-      grid-area: sapnea4;
-    }
-    #pic-2 {
-      grid-area: pic-2;
     }
   
   .grid-container #pic-1 {
@@ -572,7 +569,6 @@ span.red {
     font-size: 2.5rem;
     padding: 2rem 2rem;
   }
-  
   
   
   #part-3 {
@@ -752,15 +748,13 @@ span.red {
     }
   
     div#part1 {
-      display: flex;
+      img {
+        float: left;
+        border: .5rem solid #ccc;
+        margin: 0rem 1rem 0rem 0rem;
+      }
       p {
         font-size: 1.75rem;
-      }
-
-      #part1a {
-        display: flex;
-        flex-direction: column;
-        padding: 0rem 1.5rem;
       }
     }
 
@@ -800,25 +794,23 @@ span.red {
       display: grid;
       grid-template-areas:
       'header header header'
-      'picture p-a p-a'
-      'p-b p-b p-b';
+      'p-a p-a p-a';
+
       grid-gap: 1.5rem;
 
       h3 {
         grid-area: header;
       }
 
-      img {
-        grid-area: picture;
-      }
-
-      p#a {
+      #p-a {
         grid-area: p-a;
+        img {
+          float: left;
+          border: .5rem solid #ccc;
+          margin: 0em 1rem 0rem 0rem ;
+        }
       }
-
-      p#b {
-        grid-area: p-b
-      }
+    
 
       p {
         font-size: 1.5rem;
@@ -1115,3 +1107,6 @@ span.red {
     }
   }
 }
+
+// import Media Queries
+@import 'media';
