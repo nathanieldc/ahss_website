@@ -404,6 +404,7 @@ span.red {
       display: flex;
       justify-content: center; }
       .container-ia-a .container-ia-b .list-of-ins ul {
+        list-style: square;
         padding: 2rem 8rem; }
         .container-ia-a .container-ia-b .list-of-ins ul li {
           font-size: 1.75rem;
@@ -718,7 +719,7 @@ span.red {
         #main-container-np #sub-container-np form #part4 textarea {
           font-size: 1.5rem; }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   #navbar {
     flex-direction: column; }
     #navbar h1 {
@@ -742,90 +743,39 @@ span.red {
       height: .3rem;
       width: 25.5rem;
       margin: 2rem 0rem; }
-  #feeling-container #feeling #part-1 {
-    padding: 0rem 3.2rem;
-    color: #fff; }
-    #feeling-container #feeling #part-1 #head {
-      font-size: 4rem;
-      text-align: center;
-      margin: 1rem;
-      font-weight: bolder; }
-    #feeling-container #feeling #part-1 #head-2 {
-      text-align: center;
-      font-size: 2rem;
+  #main-container-hst div#part2 {
+    flex-direction: column; }
+    #main-container-hst div#part2 img {
       margin: 1rem; }
-    #feeling-container #feeling #part-1 #pot-problems1 {
-      text-align: center;
-      font-size: 1.5rem;
+    #main-container-hst div#part2 iframe {
       margin: 1rem; }
-    #feeling-container #feeling #part-1 #pot-problems2 {
-      text-align: center;
-      font-size: 1.5rem;
-      margin: 1rem; }
-    #feeling-container #feeling #part-1 #pot-problems3 {
-      text-align: center;
-      font-size: 1.5rem;
-      margin: 1rem; }
-  #main-container-hst {
+  #main-container-hst div#part4 {
+    flex-direction: column; }
+  #container-la #container-lb {
+    position: absolute;
+    justify-content: space-around;
+    flex-direction: column-reverse; }
+    #container-la #container-lb #sub-1, #container-la #container-lb #sub-2 {
+      padding: 1rem; }
+      #container-la #container-lb #sub-1 img, #container-la #container-lb #sub-2 img {
+        margin-bottom: 2rem; }
+  #main-container-np {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background: #7e7e7e; }
-    #main-container-hst #sub-container-hst {
-      width: 80rem;
-      padding: 3rem;
-      background-color: #fff;
-      display: flex;
-      flex-direction: column; }
-    #main-container-hst p {
-      font-size: 1.5rem; }
-    #main-container-hst div#part1 {
-      padding-bottom: 2.5rem; }
-      #main-container-hst div#part1 h3 {
-        font-size: 2rem;
-        padding-bottom: 1.5rem; }
-      #main-container-hst div#part1 h2 {
-        font-size: 3rem; }
-    #main-container-hst div#part2 {
-      padding-bottom: 2.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center; }
-      #main-container-hst div#part2 img {
-        height: 20rem;
-        border: 0.3rem solid #C018EA;
-        margin: 1rem; }
-      #main-container-hst div#part2 iframe {
-        height: 20rem;
-        border: 0.3rem solid #C018EA;
-        margin: 1rem; }
-    #main-container-hst div#part3 {
-      padding-bottom: 2.5rem; }
-      #main-container-hst div#part3 #bold {
-        font-family: sans-serif;
-        font-weight: 600;
-        color: #303030; }
-      #main-container-hst div#part3 #red {
-        font-family: sans-serif;
-        font-weight: 600;
-        color: red; }
-    #main-container-hst div#part4 {
-      padding-bottom: 2.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center; }
-      #main-container-hst div#part4 img {
-        height: 25rem;
-        border-radius: 5%; }
-    #main-container-hst div#part5 h2 {
-      font-size: 3rem;
-      text-align: center;
-      padding-bottom: 1.5rem; }
-    #main-container-hst div#part5 p {
-      font-size: 2rem; }
-      #main-container-hst div#part5 p span {
-        font-family: sans-serif;
-        font-weight: 600;
-        color: #303030; } }
+    justify-content: center; }
+    #main-container-np #sub-container-np {
+      padding: 0rem 1rem;
+      width: 100%; }
+      #main-container-np #sub-container-np p {
+        padding: 2rem 0rem; }
+      #main-container-np #sub-container-np form #part1 {
+        width: 100%; }
+      #main-container-np #sub-container-np form #part3 {
+        column-count: 1;
+        width: 100%; }
+        #main-container-np #sub-container-np form #part3 ul {
+          list-style-position: inside; }
+          #main-container-np #sub-container-np form #part3 ul li > input {
+            height: 1.5rem; }
+      #main-container-np #sub-container-np form #part4 {
+        width: 100%; } }

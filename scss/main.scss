@@ -171,13 +171,6 @@ span.red {
               background: $purple_color;
             }
           }
-
-          // a, .left-lis {
-          //   color: #fff;
-          //   padding: 1.25rem 1.0rem;
-          //   margin: 0rem 0rem;
-          // }
-
         }
 
 
@@ -624,6 +617,7 @@ span.red {
       display: flex;
       justify-content: center;
       ul {
+        list-style: square;
         padding: 2rem 8rem;
   
         li {
@@ -666,8 +660,6 @@ span.red {
     justify-content: center;
     padding: 2rem;
     width: 80rem;
-    // margin: 0rem 20rem;
-    
     #sub-1, #sub-2 {
       height: 100%;
       display: flex;
@@ -998,7 +990,7 @@ span.red {
 
 // New Patient
 #main-container-np {
-  // padding: 0rem 15rem;
+ 
   display: flex;
   flex-direction: row;
   justify-content: center;
