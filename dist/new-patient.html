@@ -44,23 +44,23 @@
       <p>If you or a loved one is in need of sleep testing, we would love to help. The first step towards having testing conducted is obtaining a signed order from a physician to conduct diagnostic sleep testing. The information entered below will be used to generate a order for Diagnostic Sleep Testing, that will be sent to your doctor. By submitting the form below we may be able to expedite your care. </p>
         <form id="new" method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <div id="part1">
-            <label for="fname">(Patient) First Name: </label>
+            <label for="fname">(Patient) First Name: <span class="red">*</span></label>
             <input id="fname" type="text" placeholder="First Name" >
-            <label for="lname">(Patient) Last Name: </label>
+            <label for="lname">(Patient) Last Name: <span class="red">*</span></label>
             <input id="lname" type="text" placeholder="Last Name" >
-            <label for="DOB">(Patient) DOB: </label>
+            <label for="DOB">(Patient) DOB: <span class="red">*</span></label>
             <input id="DOB" type="date" >
-            <label for="pphone">Telephone Phone: </label>
+            <label for="pphone">Telephone Phone: <span class="red">*</span></label>
             <input id="pphone" type="text" placeholder="Enter Phone Number" >
             <label for="sphone">Alternate Phone: </label>
             <input id="sphone" type="text" placeholder="Enter Phone Number" >
-            <label for="pins">Primary Insurance: </label>
+            <label for="pins">Primary Insurance: <span class="red">*</span></label>
             <input id="pins" type="text" placeholder="Primary Insurance" >
             <label for="sins">Secondary Insurance: </label>
             <input id="sins" type="text" placeholder="Secondary Insurance" >
-            <label for="height">Height: </label>
+            <label for="height">Height: <span class="red">*</span></label>
             <input id="height" type="text" placeholder="Enter height" >
-            <label for="weight">Weight: </label>
+            <label for="weight">Weight: <span class="red">*</span></label>
             <input id="weight" type="text" placeholder="Enter weight" >
           </div>
           <div id="part2">
@@ -97,7 +97,7 @@
           <div id="part4">
             <label for="files"> (optional) Take picture of ID and Insurance Card(front & back) to upload : </label>
             <input type="file" id="files" name="fileToUpload[]" multiple>
-            <label for="comments">Comments: </label>
+            <label for="comments">Comments: <span class="red">*</span></label>
             <textarea id="comments" type="text" placeholder="Enter comments here!" cols="100" rows="10"></textarea>
             <div>
               <div data-netlify-recaptcha="true" ></div>

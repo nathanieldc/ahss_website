@@ -18,6 +18,9 @@ ul {
   list-style: none;
   text-decoration: none; }
 
+input[type=file]::-webkit-file-upload-button {
+  cursor: pointer; }
+
 :hover {
   transition: all 0.3s ease-in; }
 
@@ -38,6 +41,7 @@ button {
   font-size: 1.5rem;
   border: none; }
   button:hover {
+    cursor: pointer;
     background-color: #C018EA;
     color: #fff; }
 
@@ -53,6 +57,9 @@ button {
   padding-bottom: 8rem; }
   .same-p-link:hover {
     color: #C018EA; }
+
+span.red {
+  color: red; }
 
 #navbar {
   display: flex;

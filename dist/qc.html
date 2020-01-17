@@ -44,19 +44,19 @@
       <h3>Please email any questions or concerns by completing the form below.</h3>
       <div id="form-qc">
         <form id="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-          <label for="fname">First Name: </label>
+          <label for="fname">First Name: <span class="red">*</span></label>
           <input id="fname" type="text" placeholder="First Name" >
-          <label for="lname">Last Name: </label>
+          <label for="lname">Last Name: <span class="red">*</span></label>
           <input id="lname" type="text" placeholder="Last Name" >
-          <label for="address1">Address Street 1: </label>
+          <label for="address1">Address Street 1: <span class="red">*</span></label>
           <input id="address1" type="text" placeholder="Address 1" >
           <label for="address2">Address Street 2: </label>
           <input id="address2" type="text" placeholder="Address 2" >
-          <label for="city">City: </label>
+          <label for="city">City: <span class="red">*</span></label>
           <input id="city" type="text" placeholder="City" >
-          <label for="zipcode">Zip Code: </label>
+          <label for="zipcode">Zip Code: <span class="red">*</span></label>
           <input id="zipcode" type="text" placeholder="Zip Code" >
-          <label for="state">State: </label>
+          <label for="state">State: <span class="red">*</span></label>
           <select id="state">
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -110,13 +110,13 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>	
-          <label for="dphone">Daytime Phone: </label>
+          <label for="dphone">Daytime Phone: <span class="red">*</span></label>
           <input id="dphone" type="text" placeholder="Enter Phone Number" >
           <label for="ephone">Evening Phone: </label>
           <input id="ephone" type="text" placeholder="Enter Phone Number" >
-          <label for="email">Email: </label>
+          <label for="email">Email: <span class="red">*</span></label>
           <input id="email" type="text" placeholder="Enter email address" >
-          <label for="comments">Comments: </label>
+          <label for="comments">Comments: <span class="red">*</span></label>
           <textarea id="comments" type="text" placeholder="Enter comments here!" cols="100" rows="10"></textarea>
           <div>
             <div data-netlify-recaptcha="true" ></div>

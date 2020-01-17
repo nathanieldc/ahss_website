@@ -30,6 +30,10 @@ ul {
 
 // Utility Classes
 
+input[type=file]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
 :hover {
  transition: all 0.3s ease-in;
 }
@@ -54,8 +58,10 @@ button {
   border-radius: 5%;
   font-size: 1.5rem;
   border: none;
+ 
 
   &:hover {
+    cursor: pointer;
     background-color: $purple_color;
     color: #fff;
   }
@@ -76,6 +82,10 @@ button {
   &:hover {
     color: $purple_color;
   }
+}
+
+span.red {
+  color: red;
 }
 
 // Navbar
