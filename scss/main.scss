@@ -207,124 +207,124 @@ span.red {
 }
 
 //Navbar B
-#navbar-b {
-  visibility: hidden;
-  margin: -4rem;
-  position: relative;
-  display: flex;
-  // border-bottom: .18rem solid #fff;
-  border-bottom: .18rem solid #fff;
-  position: sticky;
-  top: 0;
-  background: #333;
-  color: #fff;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2;
-  // padding: 1rem;
+// #navbar-b {
+//   visibility: hidden;
+//   margin: -4rem;
+//   position: relative;
+//   display: flex;
+//   // border-bottom: .18rem solid #fff;
+//   border-bottom: .18rem solid #fff;
+//   position: sticky;
+//   top: 0;
+//   background: #333;
+//   color: #fff;
+//   justify-content: space-between;
+//   align-items: center;
+//   z-index: 2;
+//   // padding: 1rem;
 
-  h1 {
+//   h1 {
 
-    font-size: 2.0rem;
-    margin: 0rem 1rem;
+//     font-size: 2.0rem;
+//     margin: 0rem 1rem;
 
-    i {
-      padding: 0rem .5rem 0rem 0rem;
-    }
-  }
+//     i {
+//       padding: 0rem .5rem 0rem 0rem;
+//     }
+//   }
 
 
-  div#left {
-    display: flex;
-    align-content: center;
+//   div#left {
+//     display: flex;
+//     align-content: center;
 
   
-    ul {
-      justify-self: end;
-      display: flex;
-      align-items: center;
-      font-size: 1.0em;
+//     ul {
+//       justify-self: end;
+//       display: flex;
+//       align-items: center;
+//       font-size: 1.0em;
 
-      li:last-child {
-        padding-right: 0rem;
-      }
+//       li:last-child {
+//         padding-right: 0rem;
+//       }
 
-      li:first-child > a {
-        border-left: .13rem dotted black;
-      }
+//       li:first-child > a {
+//         border-left: .13rem dotted black;
+//       }
       
-      & > li.left-lis, & > li > a {
-        position: relative;
-        border-right: .13rem dotted black;
+//       & > li.left-lis, & > li > a {
+//         position: relative;
+//         border-right: .13rem dotted black;
 
-        //nested ul's
-        ul {
-          display: none;
-        }
+//         //nested ul's
+//         ul {
+//           display: none;
+//         }
 
-        &:hover ul {
-          display: block;
-          position: absolute;
-          left: 0rem;
-          width: 15rem;
-          margin-top: 1.2rem;
-          li:first-child {
-            border-top: .13rem solid #333;
-          }
+//         &:hover ul {
+//           display: block;
+//           position: absolute;
+//           left: 0rem;
+//           width: 15rem;
+//           margin-top: 1.2rem;
+//           li:first-child {
+//             border-top: .13rem solid #333;
+//           }
 
-          li {
-            display: block;
-            color: #fff;
-            padding: 1.25rem 1.0rem;
-            background: gray;
-            margin: 0rem 0rem;
-            text-align: center;
-            border-bottom: .13rem solid #333;
-            border-left: .13rem solid #333;
-            border-right: .13rem solid #333;
+//           li {
+//             display: block;
+//             color: #fff;
+//             padding: 1.25rem 1.0rem;
+//             background: gray;
+//             margin: 0rem 0rem;
+//             text-align: center;
+//             border-bottom: .13rem solid #333;
+//             border-left: .13rem solid #333;
+//             border-right: .13rem solid #333;
 
-            & > a {
-              border: none
-            }
+//             & > a {
+//               border: none
+//             }
 
-            &:hover {
-              background: $purple_color;
-            }
-          }
-        }
+//             &:hover {
+//               background: $purple_color;
+//             }
+//           }
+//         }
 
 
 
-      }
+//       }
   
-      a, .left-lis {
-        color: #fff;
-        padding: 1.25rem 1.0rem;
-        margin: 0rem 0rem;
-        // width: 0rem;
+//       a, .left-lis {
+//         color: #fff;
+//         padding: 1.25rem 1.0rem;
+//         margin: 0rem 0rem;
+//         // width: 0rem;
 
   
-        &:hover {
-          background-color: $purple_color;
-          color: #fff !important;
-          // border-radius: 7.5%;
+//         &:hover {
+//           background-color: $purple_color;
+//           color: #fff !important;
+//           // border-radius: 7.5%;
 
           
-        }
-      }
+//         }
+//       }
 
-      // .left-lis { 
-      //   &:hover {
-      //     background-color: $purple_color;
-      //     color: #fff !important;
-      //     // border-radius: 7.5% 7.5% 0% 0%;
-      //   }
-      // }
+//       // .left-lis { 
+//       //   &:hover {
+//       //     background-color: $purple_color;
+//       //     color: #fff !important;
+//       //     // border-radius: 7.5% 7.5% 0% 0%;
+//       //   }
+//       // }
 
 
-    }
-  }
-}
+//     }
+//   }
+// }
 
 
 
