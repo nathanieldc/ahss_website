@@ -423,6 +423,7 @@ span.red {
         color: red; }
 
 #container-la {
+  height: 100vh;
   background: #7e7e7e;
   display: flex;
   flex-direction: row;
@@ -430,14 +431,15 @@ span.red {
   #container-la #container-lb {
     background: #fff;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 2rem;
     width: 80rem; }
     #container-la #container-lb #sub-1, #container-la #container-lb #sub-2 {
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-self: center;
-      justify-content: center;
+      justify-content: space-evenly;
       width: 40rem; }
     #container-la #container-lb #sub-1 h2 {
       font-size: 4rem;
@@ -448,7 +450,8 @@ span.red {
     #container-la #container-lb #sub-1 p {
       padding-bottom: .25rem; }
     #container-la #container-lb #sub-2 img {
-      height: 25rem; }
+      height: 25rem;
+      border: .5rem solid #ccc; }
     #container-la #container-lb #sub-2 p {
       text-align: center;
       padding-bottom: 2rem;
@@ -456,8 +459,8 @@ span.red {
       #container-la #container-lb #sub-2 p#please {
         color: blueviolet;
         font-weight: bold; }
-    #container-la #container-lb .mapouter {
-      padding-top: 1.5rem; }
+    #container-la #container-lb .gmap_canvas {
+      border: .5rem solid #ccc; }
 
 .container-inlab {
   display: flex;

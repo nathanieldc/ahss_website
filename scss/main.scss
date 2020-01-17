@@ -655,6 +655,7 @@ span.red {
 
 // Location
 #container-la {
+  height: 100vh;
   background: rgb(126, 126, 126);
   display: flex;
   flex-direction: row;
@@ -662,16 +663,17 @@ span.red {
   #container-lb {
     background: #fff;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 2rem;
     width: 80rem;
     // margin: 0rem 20rem;
     
     #sub-1, #sub-2 {
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-self: center;
-      justify-content: center;
+      justify-content: space-evenly;
       width: 40rem;
     }
 
@@ -694,22 +696,23 @@ span.red {
 
       img {
         height: 25rem;
+        border: .5rem solid #ccc;
       }
-
+      
       p {
         text-align: center;
         padding-bottom: 2rem;
         font-size: 2rem;
-
+        
         &#please {
           color: blueviolet;
           font-weight: bold;
         }
       }
     }
-
-      .mapouter {
-        padding-top: 1.5rem;
+    
+    .gmap_canvas {
+      border: .5rem solid #ccc;
       }
     }
 
