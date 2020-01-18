@@ -4,15 +4,18 @@
 
 #navbar-a {
   flex-direction: column;
-
+  
   h1 {
     font-size: 2.5rem;
     // align-self: center;
   }
   div#left {
     ul {
+      justify-self: space-evenly;
       // flex-direction: column;
-      font-size: .5rem;
+      justify-content: space-evenly;
+      flex-direction: row;
+      font-size: 1rem;
       a, .left-lis {
         color: #fff;
         padding: 1.0rem .75rem;
