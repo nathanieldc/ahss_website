@@ -124,6 +124,70 @@ span.red {
           background-color: #C018EA;
           color: #fff !important; }
 
+#navbar-b {
+  visibility: hidden;
+  position: relative;
+  display: none;
+  border-bottom: .18rem solid #fff;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2; }
+  #navbar-b h1 {
+    font-size: 2.0rem;
+    margin: 0rem 1rem; }
+    #navbar-b h1 i {
+      padding: 0rem .5rem 0rem 0rem; }
+  #navbar-b div#left {
+    display: flex;
+    align-content: center; }
+    #navbar-b div#left ul {
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      font-size: 1.0em; }
+      #navbar-b div#left ul li:last-child {
+        padding-right: 0rem; }
+      #navbar-b div#left ul li:first-child > a {
+        border-left: .13rem dotted black; }
+      #navbar-b div#left ul > li.left-lis, #navbar-b div#left ul > li > a {
+        position: relative;
+        border-right: .13rem dotted black; }
+        #navbar-b div#left ul > li.left-lis ul, #navbar-b div#left ul > li > a ul {
+          display: none; }
+        #navbar-b div#left ul > li.left-lis:hover ul, #navbar-b div#left ul > li > a:hover ul {
+          display: block;
+          position: absolute;
+          left: 0rem;
+          width: 15rem;
+          margin-top: 1.2rem; }
+          #navbar-b div#left ul > li.left-lis:hover ul li:first-child, #navbar-b div#left ul > li > a:hover ul li:first-child {
+            border-top: .13rem solid #333; }
+          #navbar-b div#left ul > li.left-lis:hover ul li, #navbar-b div#left ul > li > a:hover ul li {
+            display: block;
+            color: #fff;
+            padding: 1.25rem 1.0rem;
+            background: gray;
+            margin: 0rem 0rem;
+            text-align: center;
+            border-bottom: .13rem solid #333;
+            border-left: .13rem solid #333;
+            border-right: .13rem solid #333; }
+            #navbar-b div#left ul > li.left-lis:hover ul li > a, #navbar-b div#left ul > li > a:hover ul li > a {
+              border: none; }
+            #navbar-b div#left ul > li.left-lis:hover ul li:hover, #navbar-b div#left ul > li > a:hover ul li:hover {
+              background: #C018EA; }
+      #navbar-b div#left ul a, #navbar-b div#left ul .left-lis {
+        color: #fff;
+        padding: 1.25rem 1.0rem;
+        margin: 0rem 0rem; }
+        #navbar-b div#left ul a:hover, #navbar-b div#left ul .left-lis:hover {
+          background-color: #C018EA;
+          color: #fff !important; }
+
 #container-home {
   background: url("../img/main-img.jpeg") no-repeat center center/cover;
   height: 100vh;
@@ -721,17 +785,17 @@ span.red {
           font-size: 1.5rem; }
 
 @media (max-width: 1200px) {
-  #navbar {
+  #navbar-a {
     flex-direction: column; }
-    #navbar h1 {
+    #navbar-a h1 {
       font-size: 2.5rem; }
-    #navbar div#left ul {
+    #navbar-a div#left ul {
       font-size: .5rem; }
-      #navbar div#left ul a, #navbar div#left ul .left-lis {
+      #navbar-a div#left ul a, #navbar-a div#left ul .left-lis {
         color: #fff;
         padding: 1.0rem .75rem;
         margin: 0rem 0rem; }
-        #navbar div#left ul a:hover, #navbar div#left ul .left-lis:hover {
+        #navbar-a div#left ul a:hover, #navbar-a div#left ul .left-lis:hover {
           background-color: #C018EA;
           color: #fff !important; }
   #container-home {
@@ -780,3 +844,73 @@ span.red {
             height: 1.5rem; }
       #main-container-np #sub-container-np form #part4 {
         width: 100%; } }
+
+@media (max-width: 575px) {
+  #navbar-a {
+    display: none;
+    visibility: hidden; }
+  #navbar-b {
+    display: flex;
+    visibility: visible;
+    flex-direction: column; }
+    #navbar-b .nav-line {
+      display: block;
+      height: .2rem;
+      width: 15rem;
+      background: black; }
+    #navbar-b h1 {
+      font-size: 2.5rem;
+      text-align: center; }
+    #navbar-b div#left ul {
+      display: flex;
+      flex-direction: column;
+      font-size: .5rem; }
+      #navbar-b div#left ul li {
+        padding: 1rem;
+        text-align: center; }
+      #navbar-b div#left ul > li.left-lis, #navbar-b div#left ul > li > a {
+        position: relative;
+        border-right: 0rem;
+        border-top: .13rem dotted black; }
+        #navbar-b div#left ul > li.left-lis ul, #navbar-b div#left ul > li > a ul {
+          display: none; }
+        #navbar-b div#left ul > li.left-lis:hover ul, #navbar-b div#left ul > li > a:hover ul {
+          display: block;
+          position: absolute;
+          left: 0rem;
+          width: 15rem;
+          margin-top: 1.2rem; }
+          #navbar-b div#left ul > li.left-lis:hover ul li:first-child, #navbar-b div#left ul > li > a:hover ul li:first-child {
+            border-right: 0rem;
+            border-top: .13rem dotted black; }
+          #navbar-b div#left ul > li.left-lis:hover ul li, #navbar-b div#left ul > li > a:hover ul li {
+            display: block;
+            color: #fff;
+            padding: 1.25rem 1.0rem;
+            background: gray;
+            margin: 0rem 0rem;
+            text-align: center;
+            border-bottom: .13rem solid #333;
+            border-left: .13rem solid #333;
+            border-right: .13rem solid #333; }
+            #navbar-b div#left ul > li.left-lis:hover ul li > a, #navbar-b div#left ul > li > a:hover ul li > a {
+              border: none; }
+            #navbar-b div#left ul > li.left-lis:hover ul li:hover, #navbar-b div#left ul > li > a:hover ul li:hover {
+              background: #C018EA; }
+      #navbar-b div#left ul a, #navbar-b div#left ul .left-lis {
+        color: #fff;
+        padding: 1.0rem .75rem;
+        margin: 0rem 0rem; }
+        #navbar-b div#left ul a:hover, #navbar-b div#left ul .left-lis:hover {
+          background-color: #C018EA;
+          color: #fff !important; }
+  #container-home {
+    margin-top: -7rem; }
+  #feeling-container #feeling .container {
+    flex-direction: column; }
+    #feeling-container #feeling .container .inner-border {
+      position: relative;
+      top: 0rem;
+      height: .3rem;
+      width: 25.5rem;
+      margin: 2rem 0rem; } }
