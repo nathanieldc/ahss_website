@@ -777,11 +777,12 @@ span.red {
   #container-lb {
     background: #fff;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     padding: 2rem;
     width: 80rem;
     #sub-1, #sub-2 {
-      height: 100%;
+      // height: 100%;
       display: flex;
       flex-direction: column;
       align-self: center;
@@ -801,6 +802,11 @@ span.red {
       }
       p {
         padding-bottom: .25rem;
+      }
+
+      .map-a {
+        height: 550px;
+        width: 500px;
       }
     }
 
@@ -823,8 +829,20 @@ span.red {
       }
     }
     
-    .gmap_canvas {
-      border: .5rem solid #ccc;
+    .map-a {
+      display: block;
+      visibility: visible;
+      .gmap_canvas {
+        border: .5rem solid #ccc;
+      }
+    }
+    
+    .map-b {
+      display: none;
+      visibility: hidden;
+      .gmap_canvas {
+            border: .5rem solid #ccc;
+          }
       }
     }
 
