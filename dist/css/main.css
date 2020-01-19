@@ -871,7 +871,71 @@ span.red {
       #main-container-np #sub-container-np form #part4 {
         width: 100%; } }
 
+@media (max-height: 500px) {
+  .same-p-link {
+    color: #333;
+    position: absolute;
+    height: 2rem;
+    display: block;
+    align-self: center;
+    font-size: 5rem;
+    text-align: center;
+    bottom: 0rem;
+    left: 46%;
+    padding-bottom: 8rem; }
+    .same-p-link:hover {
+      color: #C018EA; }
+  #container-home {
+    margin-top: -7rem; }
+    #container-home #showcase {
+      height: 100%; }
+      #container-home #showcase .showcase-content h2.title {
+        display: none;
+        visibility: hidden; }
+      #container-home #showcase .showcase-content p {
+        padding: 5rem 0rem; }
+      #container-home #showcase .showcase-content .reviews-container {
+        visibility: hidden;
+        display: none; } }
+
+@media (max-width: 1249px) and (max-height: 749px) {
+  #container-home {
+    margin-top: -7rem; }
+    #container-home #showcase {
+      height: 100%; }
+      #container-home #showcase .showcase-content .reviews-container {
+        visibility: hidden;
+        display: none; } }
+
+@media (max-width: 749px) {
+  #navbar-a {
+    flex-direction: column; }
+    #navbar-a h1 {
+      font-size: 2.5rem; }
+    #navbar-a div#left ul {
+      font-size: .5rem; }
+  #container-home {
+    margin-top: -7rem; }
+    #container-home #showcase {
+      height: 100%; }
+      #container-home #showcase .showcase-content .reviews-container {
+        visibility: hidden;
+        display: none; } }
+
 @media (max-width: 575px) {
+  .same-p-link {
+    color: #333;
+    position: absolute;
+    height: 2rem;
+    display: block;
+    align-self: center;
+    font-size: 5rem;
+    text-align: center;
+    bottom: 0rem;
+    left: 43%;
+    padding-bottom: 8rem; }
+    .same-p-link:hover {
+      color: #C018EA; }
   #navbar-a {
     display: none;
     visibility: hidden; }
