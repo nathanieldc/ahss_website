@@ -272,7 +272,6 @@ span.red {
         color: #C018EA; }
 
 #feeling-container {
-  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -280,6 +279,7 @@ span.red {
   border-bottom: 1.5rem solid #0a0a0a;
   border-top: 1.5rem solid #0a0a0a; }
   #feeling-container #feeling {
+    z-index: 5;
     width: 100%;
     padding-bottom: 2rem;
     background: #333; }
@@ -1040,7 +1040,7 @@ span.red {
     #navbar-b .left-ham .menu > div > div > ul > li > a {
       color: #fff; }
   #container-home {
-    margin-top: -7rem; }
+    margin-top: -8.5rem; }
     #container-home #showcase {
       height: 100%; }
       #container-home #showcase .showcase-content {

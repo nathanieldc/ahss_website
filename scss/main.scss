@@ -457,7 +457,6 @@ span.red {
 
 // After Landing Page
 #feeling-container {
-  z-index: 2; // just added
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -467,6 +466,7 @@ span.red {
   // max-width: 90%;
   // width: 50%;
   #feeling {
+    z-index: 5; // just added
     // margin: 0rem -2rem;
     width: 100%;
     padding-bottom: 2rem;
