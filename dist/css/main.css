@@ -54,7 +54,6 @@ button {
   font-size: 5rem;
   text-align: center;
   bottom: 0rem;
-  left: 48%;
   padding-bottom: 8rem; }
   .same-p-link:hover {
     color: #C018EA; }
@@ -882,7 +881,6 @@ span.red {
     font-size: 5rem;
     text-align: center;
     bottom: 0rem;
-    left: 46%;
     padding-bottom: 8rem; }
     .same-p-link:hover {
       color: #C018EA; }
@@ -933,7 +931,6 @@ span.red {
     font-size: 5rem;
     text-align: center;
     bottom: 0rem;
-    left: 43%;
     padding-bottom: 8rem; }
     .same-p-link:hover {
       color: #C018EA; }
@@ -1129,7 +1126,6 @@ span.red {
       font-size: 5rem;
       text-align: center;
       bottom: 0rem;
-      left: 40%;
       padding-bottom: 12rem; }
       #container-home .same-p-link:hover {
         color: #C018EA; }
