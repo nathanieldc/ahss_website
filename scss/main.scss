@@ -466,7 +466,7 @@ span.red {
   // max-width: 90%;
   // width: 50%;
   #feeling {
-    z-index: 5; // just added
+    z-index: 0; 
     // margin: 0rem -2rem;
     width: 100%;
     padding-bottom: 2rem;
@@ -736,10 +736,15 @@ span.red {
     .list-of-ins {
       background: #fff;
       display: flex;
+      // flex-direction: row;
+      // align-items: center;
       justify-content: center;
       ul {
+        column-count: 2;
+        column-gap: 4rem;
         list-style: square;
-        padding: 2rem 8rem;
+        padding: 2rem;
+        margin-left: 10rem;
   
         li {
           font-size: 1.75rem;
