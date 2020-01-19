@@ -332,8 +332,8 @@ span.red {
 #container-home {
   background: $main_img no-repeat center center/cover;
   height: 100vh;
-  margin-top: -4rem;
-  
+  margin-top: -5.25rem;
+  // overflow: hidden;
 
   //Showcase
   #showcase {
@@ -457,6 +457,7 @@ span.red {
 
 // After Landing Page
 #feeling-container {
+  z-index: 2; // just added
   display: flex;
   flex-direction: row;
   justify-content: center;

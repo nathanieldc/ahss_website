@@ -191,7 +191,7 @@ span.red {
 #container-home {
   background: url("../img/main-img.jpeg") no-repeat center center/cover;
   height: 100vh;
-  margin-top: -4rem; }
+  margin-top: -5.25rem; }
   #container-home #showcase {
     height: 100%; }
     #container-home #showcase .showcase-content {
@@ -272,6 +272,7 @@ span.red {
         color: #C018EA; }
 
 #feeling-container {
+  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: center;
